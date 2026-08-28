@@ -1,0 +1,4 @@
+project/.env
+project/**/__pycache__/
+project/**/*.pyc
+.git_backup/

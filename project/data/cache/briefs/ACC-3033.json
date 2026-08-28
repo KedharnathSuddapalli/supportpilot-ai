@@ -1,0 +1,22 @@
+{
+  "input_hash": "de554197612960b2eed8bbd1026270bcf577a66c5bd00bc775d4842d85308ac7",
+  "brief": {
+    "account_id": "ACC-3033",
+    "company": "Polaris Group",
+    "executive_summary": "Polaris Group is a healthy Starter\u2011tier customer generating $120,000 ARR with strong seat utilization at 88% (925 of 1,049 seats active) and an upward usage trend on DataBridge Pro. The account currently has 11 open support tickets, none of which are P1, and no tickets have been logged in the past 90 days, indicating stable operations. With the renewal due on 2026\u201106\u201130 and the last QBR held in December 2025, the focus should be on consolidating this momentum, addressing the remaining tickets, and exploring growth opportunities.",
+    "open_risks": [],
+    "account_level_notes": [],
+    "recommended_talking_points": [
+      "Review the 11 open tickets to confirm they are on track for resolution and identify any patterns that could inform proactive support.",
+      "Discuss the 88% seat utilization and increasing usage trend as a basis for potential seat expansion or tier upgrade to capture more value.",
+      "Highlight the successful integrations with Google Workspace and Jira, and explore additional use cases or deeper integration features.",
+      "Begin early renewal planning for the 2026\u201106\u201130 date, including any discount or commitment options that align with their growth trajectory.",
+      "Confirm satisfaction with the DataBridge Pro product and gather feedback to inform future roadmap priorities."
+    ],
+    "prompt_version": "v1",
+    "model": "openai/gpt-oss-120b",
+    "input_hash": "de554197612960b2eed8bbd1026270bcf577a66c5bd00bc775d4842d85308ac7",
+    "generated_at": "2026-08-28T15:29:26.496847+00:00",
+    "cache_hit": false
+  }
+}

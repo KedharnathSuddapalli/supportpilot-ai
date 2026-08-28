@@ -1,0 +1,598 @@
+{
+  "generated_at": "2026-08-28T15:25:46.749119+00:00",
+  "model": "openai/gpt-oss-120b",
+  "pass_threshold": 0.7,
+  "summary": {
+    "total_cases": 14,
+    "total_passed": 12,
+    "average_quality_score": 0.805
+  },
+  "results": [
+    {
+      "id": "t1-01-p1-data-loss",
+      "task": "task1",
+      "description": "Clear P1: webhook delivery failure causing data loss to a downstream system",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 0.863,
+      "elapsed_seconds": 11.193,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_matches_expected",
+          "passed": false,
+          "score": 0.0,
+          "detail": "expected 'Data Loss', got 'Integration'"
+        },
+        {
+          "name": "urgency_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 0.9,
+          "detail": "The response acknowledges the critical webhook failure, references concrete diagnostics (endpoint reachability and IP whitelist), and asks for specific confirmation rather than a generic acknowledgement."
+        }
+      ]
+    },
+    {
+      "id": "t1-02-billing-invoice-discrepancy",
+      "task": "task1",
+      "description": "Clear billing question: seat count discrepancy on an invoice",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 0.875,
+      "elapsed_seconds": 1.601,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_matches_expected",
+          "passed": false,
+          "score": 0.0,
+          "detail": "expected 'P4', got 'P3'"
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 1.0,
+          "detail": "The draft response directly addresses the seat-count discrepancy, explains the billing logic, and promises to verify usage and credit without implying urgency or technical severity."
+        }
+      ]
+    },
+    {
+      "id": "t1-03-feature-request-export",
+      "task": "task1",
+      "description": "Clear feature request: export functionality to a third-party tool",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 1.0,
+      "elapsed_seconds": 1.549,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 1.0,
+          "detail": "The draft response correctly identifies the ticket as a feature request, avoids any promise of a delivery date, and offers appropriate next steps."
+        }
+      ]
+    },
+    {
+      "id": "t1-04-how-to-permissions",
+      "task": "task1",
+      "description": "Clear how-to / documentation request about configuring permissions",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 0.994,
+      "elapsed_seconds": 8.857,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 0.95,
+          "detail": "The draft response provides clear, step\u2011by\u2011step guidance on configuring permissions, mentions required scope, navigation, and Salesforce integration, and never frames the issue as a bug."
+        }
+      ]
+    },
+    {
+      "id": "t1-05-sso-kb-match",
+      "task": "task1",
+      "description": "SSO new-user authentication failure - should retrieve the authentication-sso.md KB doc",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 0.878,
+      "elapsed_seconds": 8.486,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_matches_expected",
+          "passed": false,
+          "score": 0.0,
+          "detail": "expected 'P2', got 'P1'"
+        },
+        {
+          "name": "kb_doc_matches_expected",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 0.9,
+          "detail": "The draft response directly addresses the SSO authentication error for new users, suggests concrete troubleshooting steps (checking IdP endpoint reachability and group-to-role mappings), and references a relevant KB guide, fulfilling the rubric's requirement."
+        }
+      ]
+    },
+    {
+      "id": "t1-06-adversarial-ambiguous",
+      "task": "task1",
+      "description": "ADVERSARIAL: deliberately ambiguous ticket that could plausibly be Billing OR Bug, with almost no diagnostic detail",
+      "adversarial": true,
+      "passed": true,
+      "quality_score": 0.867,
+      "elapsed_seconds": 10.145,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": false,
+          "score": 0.2,
+          "detail": "The reasoning confidently declares a billing cause without noting the ticket's ambiguity, and the draft response speculates about seat\u2011count billing rather than simply asking for clarification, violating the rubric's requirement to acknowledge uncertainty and avoid guessing fixes."
+        }
+      ]
+    },
+    {
+      "id": "t1-07-adversarial-minimal",
+      "task": "task1",
+      "description": "ADVERSARIAL: near-empty ticket body with almost no content",
+      "adversarial": true,
+      "passed": true,
+      "quality_score": 0.992,
+      "elapsed_seconds": 7.78,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "urgency_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "category_valid",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "reasoning_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "draft_response_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 0.95,
+          "detail": "The draft response correctly asks the user for detailed information about the issue without making unsupported assumptions, aligning with the rubric's requirement."
+        }
+      ]
+    },
+    {
+      "id": "t2-01-at-risk-with-escalation",
+      "task": "task2",
+      "description": "At-risk account with real escalation_notes and P1 ticket history - should surface both ticket-level and account-level risk signals",
+      "adversarial": false,
+      "passed": false,
+      "quality_score": 0.0,
+      "elapsed_seconds": 15.16,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": false,
+          "score": 0.0,
+          "detail": "BadRequestError: Error code: 400 - {'error': {'message': 'Failed to parse tool call arguments as JSON', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{\"name\": \"emit_risk_flags\", \"arguments\": {\\n  \"risk_flags\": [\\n    {\\n      \"ticket_id\": \"TKT-10393\",\\n      \"quote\": \"our Data Sources functionality has broken\",\\n      \"risk_type\": \"Escalation risk\",\\n      \"severity\": \"High\",\\n      \"reason\": \"Critical Data Sources feature is broken for 486 users and the ticket remains open.\"\\n    },\\n    {\\n      \"ticket_id\": \"TKT-10466\",\\n      \"quote\": \"Error when accessing Pipeline Monitoring in DataBridge Pro\",\\n      \"risk_type\": \"Escalation risk\",\\n      \"severity\": \"Medium\",\\n      \"reason\": \"All users encounter a consistent error after the latest update and the issue is still unresolved.\"\\n    },\\n    {\\n      \"ticket_id\": \"TKT-10073\",\\n      \"quote\": \"AnalyticsHub running extremely slowly for our team\",\\n      \"risk_type\": \"Negative sentiment\",\\n      \"severity\": \"Medium\",\\n     \"}'}}"
+        }
+      ]
+    },
+    {
+      "id": "t2-02-healthy-account",
+      "task": "task2",
+      "description": "Healthy, growing account - should NOT invent risk signals that don't exist",
+      "adversarial": false,
+      "passed": false,
+      "quality_score": 0.0,
+      "elapsed_seconds": 24.275,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": false,
+          "score": 0.0,
+          "detail": "BadRequestError: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': ''}}"
+        }
+      ]
+    },
+    {
+      "id": "t2-03-churning-account",
+      "task": "task2",
+      "description": "Churning account with a departed champion and vendor-evaluation signal in escalation_notes",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 1.0,
+      "elapsed_seconds": 22.013,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "executive_summary_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "min_talking_points",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": true,
+          "score": 1.0,
+          "detail": "The summary and talking points use a clear, urgent tone, directly addressing the churn risk, champion loss, and competitor evaluation with concrete actions."
+        }
+      ]
+    },
+    {
+      "id": "t2-04-quote-fidelity",
+      "task": "task2",
+      "description": "Verifies every risk-flag quote in the brief is an exact, verbatim substring of its cited ticket (not paraphrased or hallucinated)",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 1.0,
+      "elapsed_seconds": 30.466,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "executive_summary_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "quotes_verbatim",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": "t2-05-determinism",
+      "task": "task2",
+      "description": "Same account_id called twice must return byte-identical output via caching, not just 'probably similar' LLM output",
+      "adversarial": false,
+      "passed": true,
+      "quality_score": 1.0,
+      "elapsed_seconds": 30.158,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "second_call_is_cache_hit",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "identical_executive_summary",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "identical_generated_at",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": "t2-06-adversarial-unknown-account",
+      "task": "task2",
+      "description": "ADVERSARIAL: account_id that doesn't exist in accounts.json",
+      "adversarial": true,
+      "passed": true,
+      "quality_score": 1.0,
+      "elapsed_seconds": 0.0,
+      "checks": [
+        {
+          "name": "raises_value_error",
+          "passed": true,
+          "score": 1.0,
+          "detail": "correctly raised ValueError: No account found with account_id='ACC-0000-DOES-NOT-EXIST'"
+        }
+      ]
+    },
+    {
+      "id": "t2-07-adversarial-zero-tickets",
+      "task": "task2",
+      "description": "ADVERSARIAL: account with zero tickets in the 90-day window (simulated - no such account naturally exists in this dataset) - must not crash, and the brief should rely on account metrics alone rather than fabricating ticket content",
+      "adversarial": true,
+      "passed": true,
+      "quality_score": 0.8,
+      "elapsed_seconds": 8.296,
+      "checks": [
+        {
+          "name": "no_exception",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "executive_summary_nonempty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "no_open_risks_with_zero_tickets",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "open_risks_is_empty",
+          "passed": true,
+          "score": 1.0,
+          "detail": ""
+        },
+        {
+          "name": "llm_judge",
+          "passed": false,
+          "score": 0.0,
+          "detail": "The output references specific ticket counts and details (11 open tickets, P1 status, recent activity) despite the input providing no ticket information, violating the rubric's requirement to discuss only given account-level metrics."
+        }
+      ]
+    }
+  ]
+}

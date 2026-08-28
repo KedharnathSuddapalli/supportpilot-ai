@@ -1,0 +1,54 @@
+name: Eval Harness CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch: {}
+
+jobs:
+  run-eval-harness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run smoke tests (no API key required)
+        run: |
+          python3 tests/smoke_test.py
+          python3 tests/smoke_test_task2.py
+          python3 tests/verify_eval_harness_dry_run.py
+
+      - name: Run full eval harness
+        # Requires a GROQ_API_KEY secret to be set in the repo:
+        # Settings -> Secrets and variables -> Actions -> New repository secret
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "::warning::GROQ_API_KEY secret not set - skipping live eval run. Smoke tests above still passed."
+            exit 0
+          fi
+          python3 tests/run_eval.py
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: |
+            eval_report.json
+            eval_report.md
+          if-no-files-found: ignore

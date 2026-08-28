@@ -1,0 +1,40 @@
+{
+  "input_hash": "6d86a77fdd8f3720678c8647e30cf6b21b7bff0b8cde645137c31e41b7c9b820",
+  "brief": {
+    "account_id": "ACC-3336",
+    "company": "Omni Consumer Products",
+    "executive_summary": "Omni Consumer Products generates $500,000 ARR with a strong seat utilization of 92% (1,693 of 1,845 seats active), but the account is flagged At Risk due to an inactive usage trend and two unresolved high\u2011severity tickets that are impacting all users. Seven open tickets remain, including two pre\u2011validated escalation risks: TKT-10466 (dependency service outage) and TKT-10393 (486 users blocked after a recent update). The account\u2019s decision\u2011maker is actively evaluating a competing vendor, and recent escalation notes cite three consecutive P1 incidents, heightening renewal risk ahead of the 2026\u201108\u201119 renewal date.",
+    "open_risks": [
+      {
+        "ticket_id": "TKT-10466",
+        "quote": "Error: DEPENDENCY_UNAVAILABLE: downstream service unreachable",
+        "risk_type": "Escalation risk",
+        "severity": "High",
+        "reason": "Critical error affecting all users remains unresolved."
+      },
+      {
+        "ticket_id": "TKT-10393",
+        "quote": "We have 486 people blocked on this.",
+        "risk_type": "Escalation risk",
+        "severity": "High",
+        "reason": "Major functionality broken after update impacting a large user base."
+      }
+    ],
+    "account_level_notes": [
+      "3 consecutive P1 tickets in the last 30 days",
+      "Decision maker considering competing vendor evaluation"
+    ],
+    "recommended_talking_points": [
+      "Review the status and remediation timeline for TKT-10466 and TKT-10393, emphasizing any immediate workarounds and root\u2011cause mitigation.",
+      "Discuss the inactive usage trend and propose a joint adoption plan for WorkflowEngine and AnalyticsHub to drive higher engagement.",
+      "Highlight the 92% seat utilization as a positive indicator while exploring any capacity or licensing adjustments before renewal.",
+      "Address the decision\u2011maker\u2019s competing vendor evaluation by outlining differentiated value, recent product enhancements, and success metrics.",
+      "Confirm the health of the HubSpot integration and any upcoming integration roadmap items that could improve workflow efficiency."
+    ],
+    "prompt_version": "v1",
+    "model": "openai/gpt-oss-120b",
+    "input_hash": "6d86a77fdd8f3720678c8647e30cf6b21b7bff0b8cde645137c31e41b7c9b820",
+    "generated_at": "2026-08-28T15:29:18.141982+00:00",
+    "cache_hit": false
+  }
+}
