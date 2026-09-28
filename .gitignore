@@ -1,4 +1,6 @@
-project/.env
-project/**/__pycache__/
-project/**/*.pyc
-.git_backup/
+.env
+__pycache__/
+*.pyc
+data/cache/
+.venv/
+venv/
